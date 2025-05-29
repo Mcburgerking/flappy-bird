@@ -5,7 +5,7 @@
 <style>
 canvas {
     border:1px solid #d3d3d3;
-    background-color: #088F8F;
+    background-color: #FFFFFF;
 }
 </style>
 </head>
@@ -167,8 +167,8 @@ function updateGameArea() {
         minGap = 50;
         maxGap = 200;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-        myObstacles.push(new component(10, height, "yellow", x, 0));
-        myObstacles.push(new component(10, x - height - gap, "yellow", x, height + gap));
+        myObstacles.push(new component(10, height, "purple", x, 0));
+        myObstacles.push(new component(10, x - height - gap, "purple", x, height + gap));
     }
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].x += -1;
